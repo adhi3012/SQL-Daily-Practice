@@ -1,0 +1,31 @@
+You are given an employee table where:
+
+Each employee has a manager_id
+
+manager_id refers to emp_id of the same table
+
+👉 Write a SQL query to find employees whose salary is greater than their manager’s salary.
+
+This is a self join scenario because:
+
+One column (manager_id) references another column (emp_id) of the same table
+
+🧱 Table Structure
+
+CREATE TABLE emp
+(
+   emp_id INT,
+   emp_name VARCHAR(10),
+   salary INT,
+   manager_id INT
+);
+Expected Output
+
+emp_id	emp_name	manager_name	salary	manager_salary
+2	Rahul	Rohit	75000	70000
+5	Priya	Mohit	90000	85000
+7	Sunil	Suresh	65000	60000
+11	Mohit	Aakash	85000	80000
+13	Deepak	Nitin	75000	70000
+14	Pooja	Nitin	78000	70000
+20	Manish	Sanjay	95000	90000

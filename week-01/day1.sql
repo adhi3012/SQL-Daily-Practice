@@ -1,19 +1,16 @@
--- Create a table
-CREATE TABLE IF NOT EXISTS employees (
-    id INTEGER PRIMARY KEY,
-    name TEXT,
-    department TEXT,
-    salary INTEGER
+CREATE TABLE emp
+(
+   emp_id INT,
+   emp_name VARCHAR(10),
+   salary INT,
+   manager_id INT
 );
 
--- Insert some data
-INSERT INTO employees VALUES (1, 'Alice', 'HR', 60000);
-INSERT INTO employees VALUES (2, 'Bob', 'Engineering', 90000);
-INSERT INTO employees VALUES (3, 'Carol', 'Engineering', 85000);
-INSERT INTO employees VALUES (4, 'David', 'HR', 55000);
 
--- Run a query
-SELECT name, salary
-FROM employees
-WHERE department = 'Engineering'
-ORDER BY salary DESC;̦̦
+---Answer for the day 1
+select e.emp_id, e.emp_name, m.emp_name as manager_name, e.salary ,m.salary as manager_salary 
+from emp e
+inner join emp  m 
+on e.manager_id= m.emp_id
+where e.salary>m.salary;
+
