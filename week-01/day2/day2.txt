@@ -1,0 +1,40 @@
+A company allows only one entry per employee per day.
+However, employees found a loophole:
+they can enter multiple times using different email IDs.
+
+You are given an entries table that logs:
+
+employee name
+
+address
+
+email used
+
+floor visited
+
+resource used
+
+🎯 Your task is to write an SQL query that returns:
+
+For each person:
+
+Total number of visits
+
+Most visited floor
+
+List of distinct resources used
+
+🧱 Table Structure
+
+CREATE TABLE entries ( 
+    name VARCHAR(20),
+    address VARCHAR(20),
+    email VARCHAR(30),
+    floor INT,
+    resources VARCHAR(20)
+);
+
+
+
+
+
