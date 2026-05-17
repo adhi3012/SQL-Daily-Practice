@@ -1,0 +1,34 @@
+You are given two tables:
+
+person – stores each person’s basic information and score.
+
+friend – stores friendship relationships between people.
+
+A person can have one or more friends.
+
+🎯 Objective
+
+Write a SQL query to find details of persons whose friends’ total score is greater than 100.
+
+For each qualifying person, return:
+
+PersonID
+
+Name
+
+Number of friends
+
+Total score of all friends
+
+📋 Table Structures
+
+CREATE TABLE person (
+    PersonID INT,
+    Name VARCHAR(50),
+    Score INT
+);
+ 
+CREATE TABLE friend (
+    pid INT,   -- person id
+    fid INT    -- friend id
+);
