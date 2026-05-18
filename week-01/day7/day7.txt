@@ -1,0 +1,45 @@
+You are given two tables:
+
+Trips – contains trip information
+
+Users – contains user details (clients and drivers)
+
+Definitions:
+
+A trip can have one of the following statuses:
+
+completed
+
+cancelled_by_driver
+
+cancelled_by_client
+
+A trip is valid only if both the client and the driver are NOT banned
+
+The cancellation rate for a given day is:
+
+cancellation rate = 
+(cancelled trips with unbanned client & driver) 
+/ 
+(total trips with unbanned client & driver)
+🎯 Task
+
+Write a SQL query to find the cancellation rate for each day
+📅 From 2013-10-01 to 2013-10-03
+
+🧱 Table Structures (Given)
+
+CREATE TABLE Trips (
+    id INT,
+    client_id INT,
+    driver_id INT,
+    city_id INT,
+    status VARCHAR(50),
+    request_at VARCHAR(50)
+);
+ 
+CREATE TABLE Users (
+    users_id INT,
+    banned VARCHAR(50),
+    role VARCHAR(50)
+);
