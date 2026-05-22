@@ -1,0 +1,39 @@
+You are given two tables:
+
+Users table – contains user signup information
+
+Events table – contains user activity history
+
+Objective
+
+👉 Find the fraction (ratio) of users who:
+
+Accessed Amazon Music, and
+
+Upgraded to Prime membership (event type = 'P') within 30 days of signing up
+
+Important Notes
+
+Consider only users who accessed Amazon Music
+
+Prime purchase must happen within 30 days of the user’s join_date
+
+Output should be a single value (conversion rate)
+
+🗄️ Table Schemas
+
+CREATE TABLE users (
+    user_id INTEGER,
+    name VARCHAR(20),
+    join_date TEXT
+);
+ 
+CREATE TABLE events (
+    user_id INTEGER,
+    type VARCHAR(10),      -- 'M' = Amazon Music, 'P' = Prime, others = Pay, etc.
+    access_date TEXT
+);
+
+
+Expected Output
+
