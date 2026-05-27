@@ -1,0 +1,24 @@
+Solve using SQLite
+You are given a table that tracks user activities.
+Each activity has a start date and end date.
+
+Important conditions:
+
+Activities for a user do not overlap
+
+A user can have one or multiple activities
+
+If a user has only one activity → return that activity
+
+If a user has multiple activities → return the second most recent activity
+
+“Most recent” is determined by endDate
+
+🗂 Table Schema
+
+CREATE TABLE UserActivity (
+    username    VARCHAR(20),
+    activity    VARCHAR(20),
+    startDate   DATE,
+    endDate     DATE
+);
