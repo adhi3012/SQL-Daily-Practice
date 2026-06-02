@@ -1,0 +1,20 @@
+You are given a stores sales table.
+
+Each store reports sales quarter-wise
+
+Every store is closed for exactly one quarter due to maintenance
+
+Hence, for each store one quarter is missing
+
+👉 Write an SQL query to find the missing quarter for each store.
+
+🧱 Table Schema
+
+CREATE TABLE stores (
+    store   VARCHAR(10),
+    quarter VARCHAR(10),
+    amount  INT
+); 
+
+
+Expected Output

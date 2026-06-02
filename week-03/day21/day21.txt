@@ -1,0 +1,31 @@
+Solve using SQLite
+You are given a table that stores daily Covid cases city-wise.
+
+Each row represents:
+
+a city
+
+a date
+
+the number of Covid cases on that date
+
+👉 Task
+Write a SQL query to find cities where Covid cases are increasing continuously every day.
+
+✅ Rules
+
+The number of cases must strictly increase day-by-day
+
+Even a single decrease or same value breaks the sequence
+
+The logic should work dynamically for any number of days per city
+
+🧱 Table Schema
+
+CREATE TABLE covid (
+    city VARCHAR(50),
+    days DATE,
+    cases INT
+);
+
+

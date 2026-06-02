@@ -1,0 +1,22 @@
+Solve using SQLite
+You are given a seat occupancy table.
+
+Each row represents a seat
+
+is_empty = 'Y' → seat is empty
+
+is_empty = 'N' → seat is occupied
+
+👉 Task:
+Find all seat numbers that are part of a group of 3 or more consecutive empty seats.
+
+📊 Table Structure
+
+CREATE TABLE bms (
+    seat_no INT,
+    is_empty VARCHAR(10)
+);
+
+
+Expected Output
+

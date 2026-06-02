@@ -1,0 +1,35 @@
+Solve using SQLite
+Freelancers are paid hourly, but their billing rate may change over time.
+
+You are given two tables:
+
+billings – contains billing rate changes
+
+hoursworked – contains daily hours worked by each employee
+
+⚠️ Billing Rule (Important)
+
+A billing rate becomes effective from its bill_date
+
+If a new bill_date appears, it overrides the old rate
+
+For any work date, use the latest applicable rate on or before that work date
+
+The solution must automatically work for future rate changes
+
+🗂 Table Structures
+
+CREATE TABLE billings (
+    emp_name TEXT,
+    bill_date DATE,
+    bill_rate INT
+);
+ 
+CREATE TABLE HoursWorked (
+    emp_name TEXT,
+    work_date DATE,
+    bill_hrs INT
+);
+
+
+Expected Output

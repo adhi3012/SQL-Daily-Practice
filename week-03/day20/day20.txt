@@ -1,0 +1,27 @@
+Solve using SQLite
+You are given an exam table that stores student marks for different subjects.
+
+Each student may appear in:
+
+Physics
+
+Chemistry
+
+Other subjects (optional)
+
+👉 Write an SQL query to find students who:
+
+Appeared in both Physics and Chemistry
+
+Scored exactly the same marks in Physics and Chemistry
+
+🧱 Table Schema
+
+CREATE TABLE exams (
+    student_id INT,
+    subject VARCHAR(20),
+    marks INT
+);
+
+
+Expected Output
