@@ -1,0 +1,41 @@
+You are given:
+
+An orders table with order-wise product purchases
+
+A products table with product names
+
+Your task:
+
+👉 Find all unique pairs of products that were purchased together in the same order and count how many times each pair was bought together.
+
+Important Rules
+
+Only consider products within the same order
+
+Each pair should be unique and unordered
+
+(A, B) is the same as (B, A)
+
+Orders with only one product should be ignored
+
+Output should contain:
+
+Product 1
+
+Product 2
+
+Number of times bought together
+
+🗄️ Table Schemas
+
+CREATE TABLE orders (
+    order_id INTEGER,
+    customer_id INTEGER,
+    product_id INTEGER
+);
+ 
+CREATE TABLE products (
+    id INTEGER,
+    name TEXT
+);
+Expected Output

@@ -1,0 +1,26 @@
+Solve using SQLite
+You are given a transactions table containing customer orders.
+
+Customer churn for a month is defined as:
+
+Customers who placed at least one order in the previous month but did not place any order in the current month.
+
+Important rules
+
+Churn is calculated month-over-month
+
+The last month in data cannot have churn (no future month to compare)
+
+Customers may place multiple orders in a month, but should be counted once
+
+Result should show month-wise churned customer count
+
+🗂 Table Schema
+
+CREATE TABLE transactions (
+    order_id INTEGER,
+    cust_id INTEGER,
+    order_date DATE,
+    amount INTEGER
+);
+Expected Output

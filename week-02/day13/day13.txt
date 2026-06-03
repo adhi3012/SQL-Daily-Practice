@@ -1,0 +1,25 @@
+Solve using SQLite
+A customer is considered retained in a given month if:
+
+The customer placed at least one order in the current month AND also placed at least one order in the immediately previous month.
+
+Important notes
+
+Retention is calculated month over month
+
+First month has no retention (no previous month to compare)
+
+Multiple orders by the same customer in a month are counted only once
+
+📦 Input Table
+
+CREATE TABLE transactions (
+    order_id INTEGER,
+    cust_id INTEGER,
+    order_date DATE,
+    amount INTEGER
+);
+Expected Output
+
+
+

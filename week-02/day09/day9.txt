@@ -1,0 +1,47 @@
+You are given three tables:
+
+users – contains seller information and their favorite brand
+
+orders – contains order details with buyer and seller IDs
+
+items – contains item and brand information
+
+🎯 Objective
+
+Write an SQL query to determine for each seller whether the brand of the second item they sold matches their favorite brand.
+
+📌 Rules
+
+Orders should be considered in chronological order (order_date)
+
+If a seller has sold fewer than 2 items, return 'no'
+
+Output columns:
+
+seller_id
+
+second_item_fav_brand → 'yes' or 'no'
+
+🧱 Table Definitions (As Given)
+
+CREATE TABLE users 
+(
+  user_id         INT,
+  join_date       TEXT,
+  favorite_brand  VARCHAR(50)
+);
+ 
+CREATE TABLE orders 
+(
+  order_id   INT,
+  order_date TEXT,
+  item_id    INT,
+  buyer_id   INT,
+  seller_id  INT
+);
+ 
+CREATE TABLE items
+(
+  item_id    INT,
+  item_brand VARCHAR(50)
+);
