@@ -1,0 +1,25 @@
+You are given a table company_users that stores information about which language each user speaks in a company.
+
+A user can speak multiple languages, hence the same (company_id, user_id) may appear multiple times with different languages.
+
+✅ Requirement
+
+Write a SQL query to find company IDs that have at least two users who speak both English and German.
+
+⚠️ Important Clarifications
+
+A user must speak both English and German (not just one)
+
+At least two different users in the same company must satisfy this condition
+
+Users speaking additional languages should still be counted if they also speak English & German
+
+🗂️ Table Schema
+
+CREATE TABLE company_users (
+    company_id INT,
+    user_id INT,
+    language VARCHAR(20)
+);
+
+
