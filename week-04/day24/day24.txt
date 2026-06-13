@@ -1,0 +1,44 @@
+You are given a table subscriber that stores SMS message exchanges between users.
+
+Each row represents:
+
+who sent the message
+
+who received the message
+
+how many SMS (sms_no) were sent on a given date
+
+📌 Important Challenge
+Messages between two people can appear in both directions:
+
+A → B
+
+B → A
+
+🎯 Requirement
+
+Write a SQL query to find the total number of messages exchanged between each unique pair of users, regardless of direction.
+
+🔑 Output Rules
+
+Each pair must appear only once
+
+Order the two users alphabetically
+
+person_1 = alphabetically smaller name
+
+person_2 = alphabetically larger name
+
+Sum all messages sent in both directions
+
+🗃️ Table Schema
+
+CREATE TABLE subscriber (
+    sms_date DATE,
+    sender TEXT,
+    receiver TEXT,
+    sms_no INTEGER
+);
+Expected Output
+
+  
