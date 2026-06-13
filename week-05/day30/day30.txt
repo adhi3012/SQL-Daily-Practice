@@ -1,0 +1,32 @@
+You are given a system event table where the status of a system is checked every minute.
+
+status = 'on' → system is active
+
+status = 'off' → system is inactive
+
+👉 Task
+
+Write an SQL query to identify all login–logout sessions with:
+
+Login time → when status turns on
+
+Logout time → when status turns off
+
+Active duration count → number of consecutive minutes system stayed on
+
+📌 Rules to Observe
+
+A new session starts when on appears after an off
+
+Consecutive on events belong to same session
+
+Each session ends at the next off
+
+Count includes only on minutes
+
+📋 Table Schema
+
+CREATE TABLE event_status (
+    event_time VARCHAR(10),
+    status VARCHAR(10)
+);
