@@ -1,0 +1,18 @@
+You are given a table players_location that stores player names and the city they belong to.
+
+👉 Task
+
+Write an SQL query to pivot the data such that:
+
+Each city becomes a separate column
+
+Player names under each city are sorted alphabetically
+
+Rows are aligned properly even if cities have different counts of players
+
+📋 Table Schema
+
+CREATE TABLE players_location (
+    name VARCHAR(20),
+    city VARCHAR(20)
+);
