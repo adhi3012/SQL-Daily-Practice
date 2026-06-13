@@ -1,0 +1,40 @@
+You are given an int_orders table containing order details.
+
+Each salesperson can have multiple orders.
+
+👉 Task
+
+For each salesperson, return the complete row corresponding to the highest order amount they have sold.
+
+❌ Restrictions (Very Important)
+
+You CANNOT use:
+
+Subqueries
+
+CTEs
+
+Window functions (rank, row_number, etc.)
+
+Temporary tables
+
+✅ You CAN use:
+
+JOIN
+
+GROUP BY
+
+HAVING
+
+🗂 Table Schema
+
+CREATE TABLE int_orders (
+    order_number INTEGER NOT NULL,
+    order_date DATE NOT NULL,
+    cust_id INTEGER NOT NULL,
+    salesperson_id INTEGER NOT NULL,
+    amount REAL NOT NULL
+);
+Expected Output
+
+ 
