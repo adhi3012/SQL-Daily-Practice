@@ -1,0 +1,5 @@
+Solve using SQLite 1
+Return the list of students who scored above the average marks in their respective subject.
+
+
+

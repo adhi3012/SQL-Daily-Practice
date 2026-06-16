@@ -1,0 +1,6 @@
+For each subject, display the second highest and second lowest marks.
+
+
+
+Expected Output
+

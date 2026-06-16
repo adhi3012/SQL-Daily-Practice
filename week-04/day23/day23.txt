@@ -1,0 +1,38 @@
+You are given two tables:
+
+products – contains product prices
+
+customer_budget – contains customer budgets
+
+Each customer can buy multiple products, but:
+
+📜 Rules
+
+A customer can buy as many products as possible within their budget
+
+Products must be selected in increasing order of cost
+
+If a customer cannot afford all products, always pick cheaper products first
+
+Output:
+
+customer_id
+
+budget
+
+number_of_products_bought
+
+list_of_products (comma-separated, sorted by cost)
+
+🗃️ Table Schemas
+
+CREATE TABLE products (
+    product_id VARCHAR(20),
+    cost INT
+);
+ 
+CREATE TABLE customer_budget (
+    customer_id INT,
+    budget INT
+);
+Expected Output

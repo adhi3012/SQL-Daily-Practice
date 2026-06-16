@@ -1,0 +1,2 @@
+For each student and subject, determine whether their marks increased or decreased compared to the previous test.
+

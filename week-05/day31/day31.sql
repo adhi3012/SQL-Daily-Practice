@@ -1,0 +1,10 @@
+with a 
+as 
+(
+Select *,row_number() over(partition by city order by name asc) as rnk from players_location 
+)
+select max( case when city='Bangalore' then name end) as 'Bangalore',
+max(case when city='Mumbai' then name end) as 'Mumbai',
+max(case when city='Delhi' then name end) as 'Delhi'
+from a
+group by rnk
