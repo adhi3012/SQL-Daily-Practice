@@ -1,0 +1,22 @@
+You are given an employee table containing employee details across multiple departments.
+
+🎯 Objective
+
+Write an SQL query to:
+
+Return employee details with the 3rd highest salary in each department
+
+If a department has fewer than 3 employees, return the employee with the lowest salary in that department
+
+📋 Input Table Structure
+
+CREATE TABLE emp (
+    emp_id INTEGER,
+    emp_name TEXT,
+    salary INTEGER,
+    manager_id INTEGER,
+    emp_age INTEGER,
+    dep_id INTEGER,
+    dep_name TEXT,
+    gender TEXT
+);

@@ -1,0 +1,19 @@
+You are given an employee table that stores employee salary information across multiple companies.
+
+👉 Definition of Median
+
+If the number of employees in a company is odd, the median is the middle salary after sorting.
+
+If the number of employees is even, the median is the average of the two middle salaries.
+
+🎯 Objective
+
+Write an SQL query to find the median salary for each company.
+
+📋 Table Schema
+
+CREATE TABLE employee (
+    emp_id INTEGER,
+    company TEXT,
+    salary INTEGER
+);
