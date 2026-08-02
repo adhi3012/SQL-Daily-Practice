@@ -1,30 +1,29 @@
-You are given a table stadium that records the number of people who visited a stadium on different dates.
+with grp_number as (
+select *, row_number() over (order by visit_date) as rn, 
+id - row_number() over (order by visit_date) as grp
+from stadium where no_of_people >= 100
+)
+SELECT
 
-Each row contains:
+  id,
 
-a unique incremental ID
+  visit_date,
 
-visit date
+  no_of_people
 
-number of people visited
+FROM grp_number
 
-🎯 Task
+WHERE grp IN (
 
-Write an SQL query to return all rows that belong to 3 or more consecutive rows where:
+    SELECT grp
 
-no_of_people >= 100
+    FROM grp_number
 
-Rows must be consecutive based on ID
+    GROUP BY grp
 
-If a row is part of any valid consecutive group, it must appear in the output
+    HAVING COUNT(1) >= 3
 
-🗂 Table Structure
-
-CREATE TABLE stadium (
-    id INTEGER,
-    visit_date DATE,
-    no_of_people INTEGER
 );
-Expected Output
 
-  
+
+
