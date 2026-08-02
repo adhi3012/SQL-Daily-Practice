@@ -1,0 +1,30 @@
+vYou are given a table stadium that records the number of people who visited a stadium on different dates.
+
+Each row contains:
+
+a unique incremental ID
+
+visit date
+
+number of people visited
+
+🎯 Task
+
+Write an SQL query to return all rows that belong to 3 or more consecutive rows where:
+
+no_of_people >= 100
+
+Rows must be consecutive based on ID
+
+If a row is part of any valid consecutive group, it must appear in the output
+
+🗂 Table Structure
+
+CREATE TABLE stadium (
+    id INTEGER,
+    visit_date DATE,
+    no_of_people INTEGER
+);
+Expected Output
+
+  
