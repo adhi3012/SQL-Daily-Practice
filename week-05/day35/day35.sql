@@ -24,5 +24,3 @@ WHERE grp IN (
     HAVING COUNT(1) >= 3
 
 );
-
-
